@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     for (int counterState : gamestate){
                         if(counterState == 2){gameIsOver = false;}
                     }
-                    if (gameIsOver = false){
+                    if (gameIsOver){
                         TextView winnerMessage = (TextView) findViewById(R.id.winnerMessage);
                         winnerMessage.setText("Its a draw!");
                         LinearLayout layout = (LinearLayout) findViewById(R.id.playAgain);
