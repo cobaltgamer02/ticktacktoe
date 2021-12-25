@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 if (gamestate[winningPosition[0]] == gamestate[winningPosition[1]] && gamestate[winningPosition[1]] == gamestate[winningPosition[2]]
                         && gamestate[winningPosition[0]] != 2) {
                     gameisActive= false;
-                    String winner = "Red";
+                    String winner = "Black";
                     if (gamestate[winningPosition[0]] == 0) {
-                        winner = "Blue";
+                        winner = "Red";
                     }
                     TextView winnerMessage = (TextView) findViewById(R.id.winnerMessage);
                     winnerMessage.setText(winner + " has won!");
